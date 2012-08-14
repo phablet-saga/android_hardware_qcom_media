@@ -44,6 +44,7 @@ libOmxVdec-def += -DMAX_RES_720P
 endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm7x30)
 libOmxVdec-def += -DMAX_RES_720P
+libOmxVdec-def += -UPROCESS_EXTRADATA_IN_OUTPUT_PORT
 endif
 
 libOmxVdec-def += -D_ANDROID_ICS_
