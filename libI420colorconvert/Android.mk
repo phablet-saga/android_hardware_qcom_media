@@ -6,6 +6,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES:= \
         $(TOP)/frameworks/native/include/media/editor \
+       $(TOP)/frameworks/native/include/android \
         $(TOP)/frameworks/av/include/media/stagefright \
         $(TARGET_OUT_HEADERS)/mm-core/omxcore
 

@@ -18,7 +18,9 @@
  * limitations under the License.
  */
 
+#include "ColorConverter.h"
 #include "II420ColorConverter.h"
+#include "rect.h"
 #include <OMX_IVCommon.h>
 #include <string.h>
 #include <dlfcn.h>
@@ -201,7 +203,5 @@ extern "C" void getI420ColorConverter(II420ColorConverter *converter) {
     converter->getEncoderInputFormat = android::I420ColorConverterWrapper::getEncoderInputFormat;
     converter->convertI420ToEncoderInput = android::I420ColorConverterWrapper::convertI420ToEncoderInput;
     converter->getEncoderInputBufferInfo = android::I420ColorConverterWrapper::getEncoderInputBufferInfo;
-    converter->openColorConverterLib = android::I420ColorConverterWrapper::openColorConverterLib;
-    converter->closeColorConverterLib = android::I420ColorConverterWrapper::closeColorConverterLib;
 }
 
